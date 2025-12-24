@@ -1,0 +1,130 @@
+/* admin-style.css */
+
+/* Reset and base styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 220px;
+    background-color: #ffffff;
+    height: 100vh;
+    padding: 20px 15px;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar h4 {
+    text-align: center;
+    color: #0d6efd;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.sidebar .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    margin: 0 auto;
+    display: block;
+}
+
+.sidebar p {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar .nav-link {
+    display: block;
+    padding: 10px 15px;
+    color: #212529;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: #e9ecef;
+    color: #0d6efd;
+}
+
+/* Main content styling */
+.main-content {
+    margin-left: 240px;
+    padding: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Chart and Table Section */
+.chart-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.table-responsive {
+    margin-top: 30px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        box-shadow: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+}
